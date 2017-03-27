@@ -1,0 +1,26 @@
+.menu{
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.divvideo{
+  position: relative;
+  height: 5em;
+  width: 100%;
+}
+
+#bgvideo{
+  position: absolute;
+  width: 100%;
+}
+
+
+/* #85C62C VERt */
