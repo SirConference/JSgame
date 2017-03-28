@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Page</title>
+
+  <link rel="stylesheet" href="../styles/foundation.min.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+
+</head>
+
+<body>
+  <div id="backgroundGame">
+    <div id="rules">
+      <p>Les règles c'est simple : éclate la tête du prof qui prononce la réplique annoncée en haut de l'écran. Si tu y arrives, tu passes au niveau suivant. Si tu te plantes, tu perds une vie. On y va ?</p>
+      <input type="submit" id="buttonStart" value="J'ai compris, je joue !" />
+    </div>
+    <p id="sentence">J'aurais pas fait comme ça...</p>
+    <div id="lives"><img src="../images/lives/3hearts.png" alt="health bar"></div>
+    <div id="doors">
+      <!-- LEFT DOORS/CHARACTERS -->
+      <div id="doorL1" class="close"><img src="../images/doors/left.png" alt="first open door on the left"></div>
+      <div id="characterL1" class="close"><img src="../images/Personnages/Rouvrais/rouvfullleft.png" alt="character behind first open door on the left"></div>
+      <div id="doorL2" class="close"><img src="../images/doors/left.png" alt="second open door on the left"></div>
+      <div id="characterL2" class="close"><img src="../images/Personnages/Rouvrais/rouvfullleft.png" alt="character behind second open door on the left"></div>
+      <div id="doorL3" class="close"><img src="../images/doors/left.png" alt="third open door on the left"></div>
+      <div id="characterL3" class="close"><img src="../images/Personnages/Rouvrais/rouvfullleft.png" alt="character behind third open door on the left"></div>
+      <!-- RIGHT DOORS/CHARACTERS -->
+      <div id="doorR1" class="close"><img src="../images/doors/right.png" alt="first open door on the right"></div>
+      <div id="characterR1" class="close"><img src="../images/Personnages/Rouvrais/rouvfullright.png" alt="character behind first open door on the right"></div>
+      <div id="doorR2" class="close"><img src="../images/doors/right.png" alt="second open door on the right"></div>
+      <div id="characterR2" class="close"><img src="../images/Personnages/Rouvrais/rouvfullright.png" alt="character behind second open door on the right"></div>
+      <div id="doorR3" class="close"><img src="../images/doors/right.png" alt="third open door on the right"></div>
+      <div id="characterR3" class="close"><img src="../images/Personnages/Rouvrais/rouvfullright.png" alt="character behind third open door on the right"></div>
+    </div>
+  </div>
+
+  <audio src="../sounds/openDoor.wav" class="openDoor"></audio>
+
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/vendor/jquery.js"></script>
+  <script src="../scripts/vendor/what-input.js"></script>
+  <script src="../scripts/vendor/foundation.min.js"></script>
+  <!--<script>
+      $(document).fondation()
+    </script>-->
+</body>
+
+</html>
