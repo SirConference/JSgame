@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
+  <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Page</title>
+    <title>Page</title>
 
-  <link rel="stylesheet" href="styles/foundation.min.css">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="styles/foundation.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-</head>
-<!-- http://foundation.zurb.com/sites/docs/grid.html grid instructions -->
+  </head>
+  <!-- http://foundation.zurb.com/sites/docs/grid.html grid instructions -->
 
-<body>
-  <header id="header">
-    <div class="menu row">
-      <div class="columns small-2" id="logo">
-        <img src="images/icones/logo.png" alt="Logo">
+  <body>
+    <header id="header">
+      <div class="menu row">
+        <div class="columns small-2" id="logo">
+          <img src="images/icones/logo.png" alt="Logo">
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- VIDEO- START -->
-  <div id="videoDiv">
-    <div id="videoBlock">
-      <video preload="preload" id="video" autoplay="autoplay" loop="loop">
-        <source src="Video/DSC_0365_3.mp4" type="video/mp4"></source>
-      </video>
+    <!-- VIDEO- START -->
+    <div id="divVideo">
+      <video src="Video/video650px.mp4" autoplay loop></video>
       <div id="videoMessage">
         <h1>Guess who ?</h1>
         <h2>Le jeu</h2>
@@ -39,32 +36,136 @@
           <a href="#">
             <img src="images/icones/gamepad.png" id="gamepad" alt="Jouez maintenant">
             </br>Jouez maintenant
-          </a>
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- VIDEO- END -->
-
-  <div class="ClearBoth"></div>
-
-  <div class="row personnages">
-    <!-- Début liste des personnages -->
-    <div class="columns small-4">
-      <img src="images/Personnages/Chomel/chom1.png" alt="Avatar Chomel">
+        </a>
+      </p>
     </div>
   </div>
 
+
+<!-- VIDEO- END -->
+
+<div class="ClearBoth"></div>
+
+<!-- CHARACTER LIST - START -->
+<h3 id="charatitle">Les personnages</h3>
+<div class="row personnages">
+
+  <!-- Line 1 -->
+  <div class="columns small-2 hidden"> <!-- NULL --> o
+  </div>
+
+  <div class="columns small-4">
+    <img src="images/characters/Beaux/beau1.png" alt="Avatar Beaux"> <h3 class="charaName">M. Beaux</h2>
+  </div>
+  <div class="columns small-4">
+    <img src="images/characters/Chomel/chom1.png" alt="Avatar Chomel"> <h3 class="charaName">M. Chomel</h2>
+  </div>
+
+  <div class="columns small-2 hidden"> <!-- NULL -->o
+  </div>
+
+  <!-- Line 2 -->
+  <div class="columns small-4">
+    <img src="images/characters/Boissier/boiss1.png" alt="Avatar Boissier"> <h3 class="charaName">Mme. Boissier</h2>
+  </div>
+  <div class="columns small-4">
+    <img src="images/characters/Bourienne/boubou6.png" alt="Avatar Fauvelet de Charbonniere de Bourienne"> <h3 class="charaName">M. Bourienne</h2>
+  </div>
+  <div class="columns small-4">
+    <img src="images/characters/DeBeauchene/dbc1.png" alt="Avatar DeBeauchene"> <h3 class="charaName">M. DeBeauchêne</h2>
+  </div>
+
+  <!-- Line 3 -->
+  <div class="columns small-4">
+    <img src="images/characters/Fredo/fredo1.png" alt="Avatar Martinez F."> <h3 class="charaName">M. Martinez F</h2>
+  </div>
+  <div class="columns small-4">
+    <img src="images/characters/Martinez/marti1.png" alt="Avatar Martinez R"> <h3 class="charaName">M. Martinez R</h2>
+  </div>
+  <div class="columns small-4">
+    <img src="images/characters/Marty/marty1.png" alt="Avatar Marty"> <h3 class="charaName">Mme. Marty</h2>
+  </div>
+
+  <!-- Line 4 -->
+  <div class="columns small-4">
+    <img src="images/characters/Puget/puget1.png" alt="Avatar Puget"> <h3 class="charaName">M. Puget</h2>
+  </div>
+  <div class="columns small-4">
+    <img src="images/characters/Rouvrais/rouv1.png" alt="Avatar Rouvrais"> <h3 class="charaName">Mme. Rouvrais</h2>
+  </div>
+  <div class="columns small-4">
+    <img src="images/characters/Villa/mont1.png" alt="Avatar Villa Monteiro"> <h3 class="charaName">M. Villa Monteiro</h2>
+
+  </div>
+</div>
+<!-- CHARACTER LIST - END -->
+
+<!-- COMMENTS - START -->
+
+<div id="carousel">
+  <div class="buttons-bar">
+    <div id="buttons"><a id="prev" href="#"><</a><a id="next" href="#">></a> </div></div>
+    <div id="slides">
+      <ul>
+        <li class="slide">
+          <div class="quoteContainer">
+            <p class="quote-phrase"><span class="quote-marks">"</span>Ce jeu est passionnant. Une fois le jeu lancé, je  n’ai pas réussit à arrêter de jouer… Je voulais absolument trouver toutes les répliques des professeurs  que j’ai eu en H1… et finalement je ne m’en suis pas trop mal !! C’est moi qui détient le record de l’école il me semble
+              <span class="quote-marks">"</span>
+
+            </p>
+          </div>
+          <div class="authorContainer">
+            <p class="quote-author">Lucas M. // H3-P2019</p>
+          </div>
+        </li>
+        <li class="slide">
+          <div class="quoteContainer">
+            <p class="quote-phrase"><span class="quote-marks">"</span>
+              Le jeu est bien.
+              <span class="quote-marks">"</span>
+
+            </p>
+          </div>
+          <div class="authorContainer">
+            <p class="quote-author">Paul L. // H2-P2020</p>
+          </div>
+        </li>
+        <li class="slide">
+          <div class="quoteContainer">
+            <p class="quote-phrase"><span class="quote-marks">"</span>HILARANTTTT. C’est une excellente idée de prendre les intervenants et leurs répliques, car on se sent tous concernés (les Héticiens). J’ai particulièrement adoré les fameuse répliques de notre BOUBOU.<span class="quote-marks">"</span>
+
+            </p>
+          </div>
+          <div class="authorContainer">
+            <p class="quote-author">Baptiste A. // H1-P2021</p>
+          </div>
+        </li>
+        <li class="slide">
+          <div class="quoteContainer">
+            <p class="quote-phrase"><span class="quote-marks">"</span>J’ai adoré !!! Grandiose. J’ai reconnu les intervenants au premier coup d’œil et l’idée est merveilleuse. Un autre ! Un autre ! Un autre !<span class="quote-marks">"</span>
+
+            </p>
+          </div>
+          <div class="authorContainer">
+            <p class="quote-author">Ashley K. // H4-P2018</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- COMMENTS - END -->
+  
   <footer>
 
   </footer>
-
+  
   <script src="scripts/vendor/jquery.js"></script>
   <script src="scripts/vendor/what-input.js"></script>
   <script src="scripts/vendor/foundation.min.js"></script>
   <script>
     $(document).fondation()
   </script>
-</body>
+  <script type="text/javascript" src="scripts/carrousel.js"></script>
+  </body>
 
 </html>
