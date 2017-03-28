@@ -73,6 +73,120 @@ body{
   height: 50%;
 }
 
-
-
 /* #85C62C VERt */
+
+/***************************
+
+          GAME
+
+***************************/
+
+#backgroundGame {
+  background: url(../images/backgroundGame.jpg);
+  width: 914px;
+  height: 663px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sentence {
+  font-family: "futura";
+  font-size: 42px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 75px;
+  width: 600px;
+}
+
+#rules {
+  position: absolute;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 50px;
+  width: 600px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 75px 25px;
+  color: #ffffff;
+  z-index: 99;
+}
+
+#buttonStart {
+  background-color: #75ca00;
+  border: none;
+  border-radius: 15px;
+  padding: 5px;
+  width: 200px;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#buttonStart:hover {
+  background-color: #ffffff;
+  color: #75ca00;
+  transition: 300ms linear all;
+}
+
+
+/************ DOORS ************/
+
+.close {
+  display: none;
+}
+
+#doorL1 {
+  position: absolute;
+  left: 3px;
+  top: 132px;
+  z-index: 99;
+}
+
+#doorL2 {
+  position: absolute;
+  left: 136px;
+  top: 190px;
+  z-index: 98;
+  width: 171px;
+}
+
+#doorL3 {
+  position: absolute;
+  left: 231px;
+  top: 232px;
+  z-index: 97;
+  width: 127px;
+}
+
+#doorR1 {
+  position: absolute;
+  right: 3px;
+  top: 132px;
+  z-index: 99;
+}
+
+#doorR2 {
+  position: absolute;
+  right: 136px;
+  top: 190px;
+  z-index: 98;
+  width: 171px;
+}
+
+#doorR3 {
+  position: absolute;
+  right: 231px;
+  top: 232px;
+  width: 127px;
+}
+
+
+/************ CHARACTERS ************/
+
