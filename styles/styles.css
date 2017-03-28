@@ -1,7 +1,14 @@
+body{
+  font-family:'Roboto', sans-serif;
+}
+
+.ClearBoth{
+  clear :both;
+}
 .menu{
   background-color: white;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #logo{
@@ -10,17 +17,62 @@
   margin-right: auto;
   text-align: center;
 }
+/***********************************
+        VIDEO 
+*************************************/
 
-.divvideo{
+#videoDiv {
+  width: 100%;
   position: relative;
-  height: 5em;
-  width: 100%;
 }
 
-#bgvideo{
-  position: absolute;
+#videoBlock,#videoMessage {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
+#videoMessage *{
+  padding:0.4em;
+  margin:0}
+
+#videoMessage {
+  text-shadow: 2px 2px 2px #000000;
+  color:white;
+  z-index:99 
+}
+#videoMessage h1{
+  font-size: 3em;
+  color:#ffffff;
+  text-align:center;
+}
+#videoMessage h2{
+  font-size: 2.5em;
+  color:#ffffff;
+  text-align:center;
+}
+
+#videoMessage h3{
+  font-size: 2.0em;
+  color:#ffffff;
+  text-align:center;
+}
+.videoClick {
+  text-align:center;
+  background-color:rgba(241, 241, 241, 0.25);
+}
+.videoClick a{
+  color:white;
+  font-size: 1.7em;
+  cursor:pointer;
+  cursor:hand;
+}
+
+#video{
+  height: 50%;
+}
+
 
 
 /* #85C62C VERt */

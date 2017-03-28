@@ -10,39 +10,59 @@
 
     <link rel="stylesheet" href="styles/foundation.min.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   </head>
-  <!-- http://foundation.zurb.com/sites/docs/grid.html pour les instructions del a grille -->
-  
+  <!-- http://foundation.zurb.com/sites/docs/grid.html grid instructions -->
+
   <body>
     <header id="header">
       <div class="menu row">
-       <div class="columns small-2" id="logo">
-         <img src="images/logo.png" alt="Logo">
-       </div>
+        <div class="columns small-2" id="logo">
+          <img src="images/icones/logo.png" alt="Logo">
+        </div>
       </div>
     </header>
-    <div class="divvideo">
-      <video src="#" id="bgvideo "preload="auto" autoplay="true" loop> Vidéo teaser de Guess Who</video>
-    </div>
-    
-    <div class="row personnages">
-     <!-- Début liste des personnages -->
-      <div class="columns small-4">
-        <img src="images/Personnages/Chomel/chom1.png" alt="Avatar Chomel">
-      </div>
-      
-    </div>
-    
-    <footer>
-      
-    </footer>
 
-    <script src="scripts/vendor/jquery.js"></script>
-    <script src="scripts/vendor/what-input.js"></script>
-    <script src="scripts/vendor/foundation.min.js"></script>
-    <script>
-      $(document).fondation()
-    </script>
-  </body>
+    <!-- VIDEO- START -->
+    <div id="videoDiv">
+      <div id="videoBlock">
+        <video preload="preload" id="video" autoplay="autoplay" loop="loop">
+          <source src="Video/DSC_0365_3.mp4" type="video/mp4"></source>
+        </video>
+      <div id="videoMessage">
+        <h1>Guess who ?</h1>
+        <h2>Le jeu</h2>
+        <h3>100% héticien !</h3>
+        <p class="videoClick" >
+          <a href="#">
+            <img src="images/icones/gamepad.png" id="gamepad" alt="Jouez maintenant">
+            </br>Jouez maintenant
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+<!-- VIDEO- END -->
+
+<div class="ClearBoth"></div>
+
+<div class="row personnages">
+  <!-- Début liste des personnages -->
+  <div class="columns small-4">
+    <img src="images/Personnages/Chomel/chom1.png" alt="Avatar Chomel">
+  </div>
+</div> 
+
+<footer>
+
+</footer>
+
+<script src="scripts/vendor/jquery.js"></script>
+<script src="scripts/vendor/what-input.js"></script>
+<script src="scripts/vendor/foundation.min.js"></script>
+<script>
+  $(document).fondation()
+</script>
+</body>
 </html>
