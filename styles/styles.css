@@ -5,10 +5,19 @@ body{
 .ClearBoth{
   clear :both;
 }
+
+/*******************************
+INDEX HEAD
+*********************************/
+
+
 .menu{
-  background-color: white;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+header {
+  background-color: #F4F4F4;
 }
 
 #logo{
@@ -22,6 +31,11 @@ body{
 /***********************************
 VIDEO 
 *************************************/
+
+#mainVid {
+  width:100%;
+}
+
 
 #divVideo{
   position: relative;
@@ -45,25 +59,35 @@ VIDEO
   z-index:99;
   bottom: 100%;
 }
-#videoMessage h1{
-  font-size: 3em;
-  color:#ffffff;
-  text-align:center;
-}
-#videoMessage h2{
-  font-size: 2.5em;
-  color:#ffffff;
-  text-align:center;
-}
 
-#videoMessage h3{
-  font-size: 2.0em;
+
+#videoMessage h1{
+  font-size: 2.8em;
   color:#ffffff;
   text-align:center;
+  padding-top:200px; 
+  font-family:'Roboto';
 }
 .videoClick {
   text-align:center;
-  background-color:rgba(241, 241, 241, 0.25);
+  margin:0 auto;
+  /* background-color:rgba(241, 241, 241, 0.25);*/
+}
+.videoClick a{
+  color:white;
+  font-size: 1.7em;
+  cursor:pointer;
+  cursor:hand;
+}
+
+#gamepad {
+  width:150px;
+  margin:0;
+  padding:0;
+}
+
+.videoClick {
+  text-align:center;
 }
 .videoClick a{
   color:white;
@@ -236,119 +260,3 @@ footer h1 {
 footer div {
   padding-bottom:40px;
 }
-
-/***************************
-
-GAME
-
-***************************/
-
-#backgroundGame {
-  background: url(../images/backgroundGame.jpg);
-  width: 914px;
-  height: 663px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#sentence {
-  font-family: "futura";
-  font-size: 42px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  top: 75px;
-  width: 600px;
-}
-
-#rules {
-  position: absolute;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 50px;
-  width: 600px;
-  height: 300px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 75px 25px;
-  color: #ffffff;
-  z-index: 99;
-}
-
-#buttonStart {
-  background-color: #75ca00;
-  border: none;
-  border-radius: 15px;
-  padding: 5px;
-  width: 200px;
-  text-align: center;
-  color: #ffffff;
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-#buttonStart:hover {
-  background-color: #ffffff;
-  color: #75ca00;
-  transition: 300ms linear all;
-}
-
-
-/************ DOORS ************/
-
-.close {
-  display: none;
-}
-
-#doorL1 {
-  position: absolute;
-  left: 3px;
-  top: 132px;
-  z-index: 99;
-}
-
-#doorL2 {
-  position: absolute;
-  left: 136px;
-  top: 190px;
-  z-index: 98;
-  width: 171px;
-}
-
-#doorL3 {
-  position: absolute;
-  left: 231px;
-  top: 232px;
-  z-index: 97;
-  width: 127px;
-}
-
-#doorR1 {
-  position: absolute;
-  right: 3px;
-  top: 132px;
-  z-index: 99;
-}
-
-#doorR2 {
-  position: absolute;
-  right: 136px;
-  top: 190px;
-  z-index: 98;
-  width: 171px;
-}
-
-#doorR3 {
-  position: absolute;
-  right: 231px;
-  top: 232px;
-  width: 127px;
-}
-
-
-/************ CHARACTERS ************/
-
