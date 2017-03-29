@@ -19,8 +19,6 @@ body{
 }
 
 
-
-
 /***********************************
 VIDEO 
 *************************************/
@@ -70,8 +68,6 @@ VIDEO
 .videoClick a{
   color:white;
   font-size: 1.7em;
-  cursor:pointer;
-  cursor:hand;
 }
 
 
@@ -201,7 +197,45 @@ a#prev:hover, a#next:hover {
   width: 100%;
 }
 
+/*******************
 
+Footer
+
+******************/
+
+footer {
+  background-color:#85C62C;
+  text-align:center;
+  padding-top:30px;
+  padding-bottom:1px;
+
+}
+
+footer h1 {
+  padding:0;
+  margin:0;
+  font-family:'Futura', sans-serif;
+}
+
+.social {
+  display:inline;
+  padding:0;
+  margin:0;
+  cursor:pointer;
+  font-family:'Roboto', sans-serif;
+}
+
+.social a {
+  color:#000;
+}
+
+.social a:hover {
+  color:#fff;
+}
+
+footer div {
+  padding-bottom:40px;
+}
 
 /***************************
 
