@@ -97,6 +97,44 @@ VIDEO
 
 /* #85C62C VERt */
 
+/**********************************
+INTRO
+*********************************/
+#intro{
+  background-color: #F4F4F4;
+  padding: 50px 400px;
+  margin-top: -7px;
+}
+
+#pintro{
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Roboto';
+  text-align: center;
+}
+
+#charabutton{
+  background-color: white;
+  padding: 3px 2px;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid black;
+  max-width: 30%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#charabutton:hover{
+  background-color:#85C62C ;
+  color: white;
+  transition: 0.8s;
+  border: 1px solid white;
+}
+
+section#intro a{
+  color: black;
+}
+
 /***********************
 CHARACTER LIST
 ************************/
@@ -221,6 +259,59 @@ a#prev:hover, a#next:hover {
   width: 100%;
 }
 
+
+
+/*******************
+
+Galeries
+
+******************/
+
+.instagram{
+  margin:0 auto;
+  text-align:center;
+  padding-top:50px;
+  padding-bottom:90px;
+  background-color: #EAEAEA;
+}
+
+.imgInsta{
+  display: inline-block;
+  width:315px;
+}
+
+
+.instagram h1 {
+  font-family:'futura';
+}
+
+.divimage{
+  position: relative;
+}
+
+.divimage:hover{
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  opacity: 0.5;
+  transition: 0.8s;
+}
+
+.soutient{
+  display: none;
+  position: absolute;
+  right: 20%;
+  top: 30%;
+  color: black;
+  text-align: center;
+}
+.divimage:hover .soutient{
+  display: inline-block;
+}
+
+.logoInsta{
+  width: 50px;
+}
+
 /*******************
 
 Footer
@@ -232,30 +323,37 @@ footer {
   text-align:center;
   padding-top:30px;
   padding-bottom:1px;
+  font-family:'Roboto', sans-serif;
 
 }
 
-footer h1 {
-  padding:0;
-  margin:0;
-  font-family:'Futura', sans-serif;
+footer img {
+  width:180px;
+
 }
+
 
 .social {
-  display:inline;
   padding:0;
   margin:0;
   cursor:pointer;
   font-family:'Roboto', sans-serif;
 }
 
-.social a {
-  color:#000;
+.social img {
+  opacity:0.7;
+  width:18px;
+  margin:0;
+  padding:0;
+  margin-left:5px;
+  display:inline;
 }
 
-.social a:hover {
-  color:#fff;
+.social p {
+  font-size:13px;
+  margin-top:25px;
 }
+
 
 footer div {
   padding-bottom:40px;
